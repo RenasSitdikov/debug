@@ -9,7 +9,6 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.timer = setInterval(() => {
-            console.log(this.props.index);
             this.props.onIncr(this.props.index, this.props.timer - 1);
         }, 1000);
     }
