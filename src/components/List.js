@@ -17,7 +17,7 @@ const List = () => {
 
     const onEnds = index => {
         const removedTimers = [...timers];
-        removedTimers[index] = {...timers[index], finished: true};
+        removedTimers[index].finished = true;
         setTimers([...removedTimers]);
     };
 
